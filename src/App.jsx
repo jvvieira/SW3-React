@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        {routes.map(route => (
+        {routes(process.env.REACT_APP_CLIENTID).map(route => (
           <Route {...route} key={route.path} />
         ))}
       </Switch>
