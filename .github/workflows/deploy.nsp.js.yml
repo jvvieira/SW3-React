@@ -8,6 +8,9 @@ concurrency: PRD
 #   pull_request:
 #     branches: [master]
 
+on: workflow_dispatch
+    
+
 jobs:
   build:
     runs-on: ubuntu-latest
